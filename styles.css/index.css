@@ -22,7 +22,7 @@
     background-color: #f3f6fa;
     margin: auto;
     height: 40%;
-    width: 85%;
+    width: 90%;
     border-radius: 10px;
     padding: 10px;
 }
@@ -257,9 +257,18 @@
     margin-bottom: 20px;
 }
 
+#roadmaps>div:first-child>div:first-child>span:first-child{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00baab;
+}
+
 #roadmaps>div:first-child>div:first-child>span:first-child,
 #roadmaps>div:first-child>div:first-child>span:nth-child(2) {
     color: #00baab;
+}
+
+#roadmaps>div:first-child>div:first-child>span:nth-child(2)~span{
+    color: gray;
 }
 
 #roadmaps>div:first-child>h1+p {
@@ -340,10 +349,18 @@
     letter-spacing: 3px;
     margin-bottom: 30px;
 }
+#engineering>div:first-child>div:first-child>span:first-child{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00baab;
+}
 
 #engineering>div:first-child>div:first-child>span:first-child,
 #engineering>div:first-child>div:first-child>span:nth-child(2) {
     color: #00baab;
+}
+
+#engineering>div:first-child>div:first-child>span:nth-child(2)~span{
+    color: gray;
 }
 
 #engineering>div:first-child>div:last-child {
@@ -357,13 +374,24 @@
     line-height: 25px;
 }
 
-#engineering>div:first-child>div:last-child>div>p {
+#engineering>div:first-child>div:last-child>div>p{
     margin: 15px 0px;
+}
+
+#engineering>div:first-child>div:last-child>div>div{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
-#engineering>div:first-child>div:last-child>div>p>span {
+#engineering>div:first-child>div:last-child>div>div>p {
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#engineering>div:first-child>div:last-child>div>div>span {
     height: 20px;
     width: 20px;
     display: flex;
@@ -376,7 +404,7 @@
 }
 
 #engineering>div:first-child>div:last-child>div:last-child {
-    height: 450px;
+    height: 480px;
     width: 60%;
     overflow: hidden;
     margin-right: -35px;
@@ -384,7 +412,7 @@
 }
 
 #engineering>div:first-child>div:last-child>div>img {
-    width: 165%;
+    width: 100%;
 }
 
 #engineering>div:last-child {
@@ -394,11 +422,12 @@
     padding: 15px;
     font-weight: 600;
     cursor: pointer;
+    color: #00baab;
     background-color: white;
 }
 
 #engineering>div:last-child:hover {
-    color: #00baab;
+    color: black;
 }
 
 
@@ -477,4 +506,84 @@
     padding: 10px 15px;
     color: white;
     border-radius: 5px;
+}
+
+
+
+/* =============================Video Player============================= */
+
+#video_player{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #a1a3be;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+
+#close_video_player {
+    position: fixed;
+    top: 60px;
+    right: -12px;
+    background-color: brown;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 16px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#close_video_player>p {
+    rotate: 45deg;
+}
+
+#video_box{
+    width: 70%;
+    height: 75%;
+    background-color: #a1a3be;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#video_box>iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* ================Readmore Nifty reviews on G2================ */
+#G2{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to bottom left, #e8f9ff,  #fbe8f8);
+}
+
+
+
+
+
+#G2+div>hr{
+    margin: 60px auto 0px;
+    rotate: 90deg;
+    width: 40px;
+}
+
+#G2+div>hr+p{
+    margin: 50px 0px;
+    color: #a1a3be;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
 }
