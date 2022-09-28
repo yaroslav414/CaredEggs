@@ -26,7 +26,7 @@
             </div>
         </div>
         <div>
-            <form>
+            <form id="sign_in">
                 <h2>Log in to your account</h2>
                 <label>Email Address *</label>
                 <input type="email" placeholder="name@company.com">
@@ -53,3 +53,31 @@
 </body>
 
 </html>
+
+<script>
+    let signInForm = document.querySelector("#sign_in");
+    signInForm.addEventListener("submit", getSignInData);
+    let users = JSON.parse(localStorage.getItem("usersLS")) || [];
+
+    function getSignInData(event) {
+        event.preventDefault();
+
+        let dataMatched = false;
+
+        //checking user exists or not
+        users.forEach(function (el) {
+            if (el.email == signInForm.mail.value && el.password == signInForm.pwd.value) {
+                alert("Sign-in Successfully! 🙏 welcome" + el.name);
+                dataMatched = true;
+                return;
+            }
+        })
+
+        //if user not exists then can't sign-in;
+        if (!dataMatched) alert("Wrong credentials!");
+
+
+        signInForm.mail.value = "";
+        signInForm.pwd.value = "";
+    }
+</script>
