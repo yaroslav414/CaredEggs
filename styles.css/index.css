@@ -1,0 +1,480 @@
+#upper_part {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #fcf9f9, #f3f6fa);
+    display: flex;
+    padding-top: 55px;
+}
+
+#upper_part>img:first-child {
+    height: 260px;
+    width: 250px;
+    margin: 125px 10px 0px 100px;
+}
+
+#upper_part>div {
+    margin-top: 20px;
+    width: 780px;
+    height: 95%;
+}
+
+#vid {
+    background-color: #f3f6fa;
+    margin: auto;
+    height: 40%;
+    width: 85%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#vid>div {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://niftypm.com/_nuxt/img/large@1x.8a3e5ad.webp");
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+#vid>div>div {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 55px;
+    background-color: white;
+    border: 0px solid #00baab;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in, border 0.5s ease-in;
+}
+
+#vid>div>div:hover {
+    background-color: #edf9f7;
+    border: 1px solid #00baab;
+}
+
+.fa-play {
+    color: #00baab;
+    font-size: 40px;
+}
+
+#vid>div>div+p {
+    color: #00baab;
+    margin-bottom: 15px;
+}
+
+#vid+div {
+    width: 505px;
+    margin: auto;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#vid+div>h1 {
+    font-size: 42px;
+    margin-bottom: -15px;
+}
+
+#vid+div>h1>span>img {
+    width: 45px;
+}
+
+#vid+div>h1+p {
+    line-height: 28px;
+}
+
+#vid+div>div:nth-child(3) {
+    width: 90%;
+    background-color: #edeef2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+#vid+div>div:nth-child(3)>input {
+    font-size: 18px;
+    color: gray;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+#vid+div>div:nth-child(3)>button {
+    background-color: #00baab;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+#vid+div>hr {
+    width: 95%;
+    margin-inline: auto;
+}
+
+#vid+div>hr+a {
+    width: 95%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+#vid+div>hr+a>span {
+    font-weight: 600;
+    margin-left: 10px;
+    color: black;
+    transition: color 0.3s ease-out;
+}
+
+#vid+div>hr+a>span:hover {
+    color: #00baab;
+}
+
+#vid+div>p:nth-child(6) {
+    color: #a1a3be;
+    margin-top: -15px;
+}
+
+#vid+div>div:last-child {
+    height: 20px;
+    width: 33px;
+    border-radius: 15px;
+    rotate: 90deg;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: -40px;
+    padding: 0px 5px;
+}
+
+#vid+div>div:last-child>div {
+    height: 5px;
+    width: 13px;
+    border-radius: 15px;
+    background-color: #00baab;
+    animation: upAndDown 2s ease-in-out infinite;
+}
+
+#upper_part>img:last-child {
+    height: 235px;
+    width: 180px;
+    margin: 420px 0px 0px 160px;
+}
+
+@keyframes upAndDown {
+    0% {
+        margin-right: 0px;
+    }
+
+    50% {
+        margin-right: 8px;
+    }
+
+    100% {
+        margin-right: 0px;
+    }
+
+}
+
+/* ========================Upper-second-part======================== */
+
+#upper_part_2 {
+    padding-top: 50px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #a1a3be;
+    font-weight: 600;
+}
+
+#upper_part_2>div {
+    margin: 30px auto;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#upper_part_2>div>img {
+    width: 10%;
+}
+
+#upper_part_2>hr {
+    margin: 60px auto 0px;
+    rotate: 90deg;
+    width: 40px;
+}
+
+#upper_part_2>hr+p {
+    margin: 50px 0px;
+    color: #a1a3be;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* =====================Roadmaps... Tasks... Discussions....===================== */
+
+#roadmaps {
+    width: 85%;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+
+#roadmaps>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #e8f9ff,
+            #fbe8f8);
+    padding-top: 50px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#roadmaps>div:first-child>div:first-child {
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#roadmaps>div:first-child>div:first-child>span:first-child,
+#roadmaps>div:first-child>div:first-child>span:nth-child(2) {
+    color: #00baab;
+}
+
+#roadmaps>div:first-child>h1+p {
+    margin: 20px 0px 0px;
+    width: 42%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 17px;
+}
+
+#roadmaps>div:first-child>h1+p::after {
+    content: "Learn More >";
+    color: #00baab;
+    cursor: pointer;
+}
+
+#roadmaps>div:first-child>img {
+    margin-top: 40px;
+    width: 80%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#roadmaps>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#roadmaps>div:last-child:hover {
+    color: #00baab;
+}
+
+#roadmaps>div:last-child>img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+
+#roadmaps+div>hr {
+    margin: 60px auto 0px;
+    rotate: 90deg;
+    width: 40px;
+}
+
+#roadmaps+div>hr+p {
+    margin: 50px 0px;
+    color: #a1a3be;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+/* =================Engineering... Sales... Marketing...================= */
+
+#engineering {
+    width: 85%;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+
+#engineering>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to bottom right, #fbe8f8, #e8f9ff);
+    padding: 50px;
+    border-radius: 20px 20px 20px 0px;
+}
+
+#engineering>div:first-child>div:first-child {
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+#engineering>div:first-child>div:first-child>span:first-child,
+#engineering>div:first-child>div:first-child>span:nth-child(2) {
+    color: #00baab;
+}
+
+#engineering>div:first-child>div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#engineering>div:first-child>div:last-child>div {
+    width: 40%;
+    line-height: 25px;
+}
+
+#engineering>div:first-child>div:last-child>div>p {
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#engineering>div:first-child>div:last-child>div>p>span {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbebe9;
+    border-radius: 50%;
+    color: #05bbad;
+    margin-right: 10px;
+}
+
+#engineering>div:first-child>div:last-child>div:last-child {
+    height: 450px;
+    width: 60%;
+    overflow: hidden;
+    margin-right: -35px;
+    margin-bottom: -35px;
+}
+
+#engineering>div:first-child>div:last-child>div>img {
+    width: 165%;
+}
+
+#engineering>div:last-child {
+    margin-top: -48px;
+    width: 12%;
+    border-radius: 0px 20px 0px 0px;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+}
+
+#engineering>div:last-child:hover {
+    color: #00baab;
+}
+
+
+/* ===============================Sign up===============================  */
+
+#sign_up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #a1a3be;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#sign_up>div:first-child {
+    position: fixed;
+    top: 60px;
+    right: -12px;
+    background-color: brown;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 16px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#sign_up>div:first-child>p {
+    rotate: 45deg;
+}
+
+#sign_up_box {
+    width: 38%;
+    height: 50%;
+    background: url("https://niftypm.com/_nuxt/img/flying-papers.1f279aa.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#sign_up_box>a>img {
+    width: 140px;
+}
+
+#sign_up_box>div {
+    width: 90%;
+    background-color: #edeef2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+#sign_up_box>div>input {
+    font-size: 18px;
+    color: gray;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+#sign_up_box>div>button {
+    background-color: #00baab;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+}
