@@ -29,12 +29,12 @@
             <form id="sign_in">
                 <h2>Log in to your account</h2>
                 <label>Email Address *</label>
-                <input type="email" placeholder="name@company.com">
+                <input id="mail" type="email" placeholder="name@company.com">
                 <div>
                     <label>Password *</label>
                     <label>Forgot password?</label>
                 </div>
-                <input type="pasword" placeholder="Password">
+                <input id="pwd" type="password" placeholder="Password">
                 <input type="submit" value="Log in">
                 <a href="https://api.niftypm.com/auth/google?state=">
                     <img src="https://sso.masaischool.com/google.svg" alt="Google_logo">
@@ -67,8 +67,9 @@
         //checking user exists or not
         users.forEach(function (el) {
             if (el.email == signInForm.mail.value && el.password == signInForm.pwd.value) {
-                alert("Sign-in Successfully! 🙏 welcome" + el.name);
+                alert("Sign-in Successfully! 🙏 welcome");
                 dataMatched = true;
+                window.location.href = "index.html"
                 return;
             }
         })
