@@ -82,6 +82,7 @@ form{
     flex-direction: column;
     justify-content: space-around;
     height: inherit;
+    position: relative;
 }
 
 form>input{
@@ -143,8 +144,8 @@ hr+p{
     padding: 2px 6px;
     border-radius: 16px;
     position: absolute;
-    top: 70%;
-    left: 63%;
+    top: 75%;
+    left: 45%;
 }
 
 hr+p+p,
