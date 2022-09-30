@@ -1,0 +1,425 @@
+#upper{
+    width: 100%;
+    height: 550px;
+    padding-top: 55px;
+    background: linear-gradient(to bottom, #f3f6fa, #fdf9f9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#upper>div:first-child,
+#upper>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#upper>div:first-child:hover,
+#upper>div:last-child:hover{
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 3px 9px 0px;
+}
+
+#upper>div:first-child>i,
+#upper>div:last-child>i{
+    font-size: 10px;
+    color: #ecbc66;
+    background-color: #f9e9cc;
+    border-radius: 50%;
+    padding: 3px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upper>div:nth-child(2){
+    height: 100%;
+    width: 45%;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#upper>div:nth-child(2)>p:first-child{
+    padding: 5px 10px;
+    background-color: #66c5f7;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+}
+
+#upper>div:nth-child(2)>p:first-child:before{
+    content: "@";
+    color: #bee8ff;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+#upper>div:nth-child(2)>h1:nth-child(2){
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 70%;
+    color: #020202;
+}
+
+#upper>div:nth-child(2)>p:nth-child(3){
+    width: 88%;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+#upper>div:nth-child(2)>div:nth-child(4){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+
+#upper>div:nth-child(2)>div:nth-child(4)>div:first-child{
+    width: 90%;
+    background-color: #edeef2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+#upper>div:nth-child(2)>div:nth-child(4)>div:first-child>input{
+    font-size: 18px;
+    color: gray;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+#upper>div:nth-child(2)>div:nth-child(4)>div:first-child>button{
+    background-color: #00baab;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+#upper>div:nth-child(2)>div:nth-child(4)>div:first-child>button:hover{
+    cursor: pointer;
+    background-color: #009e91;
+}
+
+#upper>div:nth-child(2)>div:nth-child(4)>a:last-child{
+    border: 1px soild blue;
+    padding: 15px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upper>div:nth-child(2)>div:nth-child(4)>a:last-child>img{
+    width: 75%;
+}
+
+
+#upper>div:nth-child(2)>p:last-child{
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -25px;
+}
+
+
+/*======================= Facilitate ideas part =======================*/
+
+
+#facilitate_ideas {
+    width: 85%;
+    margin: 200px auto 100px;
+    border-radius: 20px;
+}
+
+#facilitate_ideas>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #fbeaf8, #ebfaff);
+    padding-top: 50px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 100px;
+}
+
+#facilitate_ideas>div:first-child>div:first-child {
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+#facilitate_ideas>div:first-child>div:first-child>span {
+    padding-bottom: 10px;
+}
+
+#facilitate_ideas>div:first-child>div:first-child>span:nth-of-type(odd) {
+    cursor: pointer;
+}
+
+#facilitate_ideas>div:first-child>div:first-child>span:nth-of-type(even) {
+    font-size: 10px;
+}
+
+
+#facilitate_ideas>div:first-child>div:first-child>span {
+    color: gray;
+}
+
+#facilitate_ideas>div:first-child>h1+p {
+    margin: 20px 0px 0px;
+    width: 46%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 17px;
+}
+
+#facilitate_ideas>div:first-child>h1+p::after {
+    content: "Learn More >";
+    color: #00baab;
+    cursor: pointer;
+}
+
+#facilitate_ideas>div:first-child>img {
+    margin-top: 40px;
+    width: 50%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#facilitate_ideas>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#facilitate_ideas>div:last-child:hover {
+    color: #00baab;
+}
+
+#facilitate_ideas>div:last-child>img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+
+#facilitate_ideas+div>hr {
+    margin: 60px auto 0px;
+    rotate: 90deg;
+    width: 40px;
+}
+
+#facilitate_ideas+div>hr+p {
+    margin: 50px 0px;
+    color: #a1a3be;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+/*========================= Images Part =========================*/
+
+#facilitate_ideas+div {
+    padding-top: 100px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #a1a3be;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#facilitate_ideas+div>div {
+    margin: 70px auto;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#facilitate_ideas+div>div>img {
+    width: 10%;
+}
+
+/*===================== do more with discussions =====================*/
+#discussions{
+    width: 80%;
+    margin-inline: auto;
+}
+
+#discussions>div:first-child{
+    height: 60px;
+    width: 60px;
+    margin-inline: auto;
+    background: linear-gradient(to right, #00a799, #419a93);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#discussions>div:first-child::after{
+    content: "@";
+    font-size: 22px;
+    color: white;
+}
+
+#discussions>h1{
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 45px;
+    margin: 25px 0px;
+}
+
+#discussions>p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: gray;
+    margin-inline: auto;
+    display: block;
+    padding: 0% 23%;
+    margin-bottom: 50px;
+}
+
+#discussions>div:nth-child(4),
+#discussions>div:nth-child(6){
+    display: grid;
+    grid-template-columns: 40% 55%;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+#discussions>div:nth-child(4)>div:first-child,
+#discussions>div:nth-child(6)>div:first-child{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#discussions>div:nth-child(4)>div:first-child>h1,
+#discussions>div:nth-child(6)>div:first-child>h1{
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
+
+
+#discussions>div:nth-child(4)>div:first-child>p,
+#discussions>div:nth-child(6)>div:first-child>p{
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+#discussions>div:nth-child(4)>div:last-child,
+#discussions>div:nth-child(6)>div:last-child{
+    background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#discussions>div:nth-child(5){
+    display: grid;
+    grid-template-columns: 55% 40%;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+#discussions>div:nth-child(5)>div:first-child{
+    background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#discussions>div:nth-child(5)>div:last-child{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#discussions>div:nth-child(5)>div:last-child>h1{
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
+
+
+#discussions>div:nth-child(5)>div:last-child>p{
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+
+
+
+#discussions+div{
+    margin: 50px auto;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#discussions+div>p{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#discussions+div>img{
+    width: 130px;
+}
+
+#discussions+div>button{
+    font-size: 17px;
+    color: white;
+    background-color: #009e91;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#discussions+div>button:hover{
+    background-color: #00857a;
+}
+

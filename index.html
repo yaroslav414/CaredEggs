@@ -31,7 +31,7 @@
                         <p class="goldy">❤ Learn how Nifty inspires productivity!</p>
                         <div>
                             <div>
-                                <a href="#">Discussions</a>
+                                <a href="discussions.html">Discussions</a>
                                 <a href="#">Tasks</a>
                                 <a href="#">Time Tracking</a>
                                 <a href="#">Project Home</a>
@@ -115,7 +115,7 @@
                     <div id="play_button">
                         <i class="fa-sharp fa-solid fa-play"></i>
                     </div>
-                    <p>I N T R O D U C I N G</p>
+                    <p>INTRODUCING</p>
                 </div>
             </div>
             <div>
@@ -124,8 +124,8 @@
                 <p>Stop switching between Roadmaps, Tasks, Docs, Chats, & other tools.
                     Nifty is one app to unite teams, goals, and actions in one place.</p>
                 <div>
-                    <input type="email" placeholder="name@company.com">
-                    <button>Get Started</button>
+                    <input id="email" type="email" placeholder="name@company.com">
+                    <button id="submit">Get Started</button>
                 </div>
                 <hr size="1">
                 <a href="https://api.niftypm.com/auth/google">
@@ -171,6 +171,7 @@
                 <span>Docs</span>
                 <span>● ● ● ●</span>
                 <span>Reporting</span>
+                <span> <!-- Don't delete it, it's used in javascript --> </span>
             </div>
             <h1 id="roadmaps_heading">Set Goals & Timelines</h1>
             <p id="roadmaps_description">Set a visual timeline for your big-picture goals and build team alignment by
@@ -266,7 +267,7 @@
                 d="M28,32 C28,32 23.2863266,30.1450667 19.4727818,28.6592 L3.43749107,28.6592 C1.53921989,28.6592 0,27.0272 0,25.0144 L0,3.6448 C0,1.632 1.53921989,0 3.43749107,0 L24.5615088,0 C26.45978,0 27.9989999,1.632 27.9989999,3.6448 L27.9989999,22.0490667 L28,22.0490667 L28,32 Z M23.8614088,20.0181333 C23.5309223,19.6105242 22.9540812,19.5633836 22.5692242,19.9125333 C22.5392199,19.9392 19.5537934,22.5941333 13.9989999,22.5941333 C8.51321617,22.5941333 5.48178311,19.9584 5.4277754,19.9104 C5.04295119,19.5629428 4.46760991,19.6105095 4.13759108,20.0170667 C3.97913051,20.2124916 3.9004494,20.4673395 3.91904357,20.7249415 C3.93763774,20.9825435 4.05196575,21.2215447 4.23660523,21.3888 C4.37862552,21.5168 7.77411059,24.5386667 13.9989999,24.5386667 C20.2248893,24.5386667 23.6203743,21.5168 23.7623946,21.3888 C23.9467342,21.2215726 24.0608642,20.9827905 24.0794539,20.7254507 C24.0980436,20.4681109 24.0195551,20.2135019 23.8614088,20.0181333 Z">
             </path>
         </svg>
-        <!-- <svg focusable="false" viewBox="0 0 16 14" width="28" height="25" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.116 4.884l1.768-1.768L8 9.232l6.116-6.116 1.768 1.768L8 12.768.116 4.884z"></path></svg> -->
+        <!-- <svg focusable="false" viewBox="0 0 16 14" width="20" height="17" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.116 4.884l1.768-1.768L8 9.232l6.116-6.116 1.768 1.768L8 12.768.116 4.884z"></path></svg> -->
     </div>
 
 
@@ -482,6 +483,13 @@
         </div>
     </div>
 
+    <div id="left-carousal">
+        <div id="left-carousal-items"></div>
+    </div>
+    <div id="right-carousal">
+        <div id="right-carousal-items"></div>
+    </div>
+
 
 
 
@@ -523,10 +531,65 @@
                 </a>
             </div>
         </div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxOTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjM1IiBkPSJNMCAxYzg5LjY5NiA3MS43NjMgMTY5LjY2NiAxMzEuNjggMjYyLjA2NCAxMzYuNDg3IDkyLjM5OCA0LjgwNyAxMzAuMjIxLTQwLjAwMiAxOTMuOTgxLTQwLjAwMiA2My43NiAwIDk0LjU1OSAyMC42MDIgMTE1LjA5MiA0MC4wMDJDNTkxLjY3IDE1Ni44ODcgNjMyLjczNiAxOTUgNzEwLjAwNCAxOTVzMTE1LjA5Mi00MC41MTcgMTM0LjU0NC01Ny41MTNDODY0IDEyMC40OSA5MTUuODcyIDg1LjEyNCA5ODguMjc4IDg1LjEyNGM3Mi40MDIgMCA5NC4wMjIgMTkuODQ0IDE2Mi42NDIgMTcuMzQgNjguNjItMi41MDUgOTIuOTQtMzIuOTYzIDE2NC4yNi0zMi45NjMgNzEuMzMgMCA1OC4zNiAyMy4zNDkgMTI0LjgyIDIzLjM0OSIgc3Ryb2tlPSJ1cmwoI2EpIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAiIHkxPSIxIiB4Mj0iMTQ0MCIgeTI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkY1OUY4Ii8+PHN0b3Agb2Zmc2V0PSIuMTk4IiBzdG9wLWNvbG9yPSIjQUU3MkZGIi8+PHN0b3Agb2Zmc2V0PSIuNDA2IiBzdG9wLWNvbG9yPSIjNzBDOUU4Ii8+PHN0b3Agb2Zmc2V0PSIuNjIiIHN0b3AtY29sb3I9IiMwMUFCOUQiLz48c3RvcCBvZmZzZXQ9Ii44MjUiIHN0b3AtY29sb3I9IiNGRTAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4=" alt="curly-line">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxOTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggb3BhY2l0eT0iLjM1IiBkPSJNMCAxYzg5LjY5NiA3MS43NjMgMTY5LjY2NiAxMzEuNjggMjYyLjA2NCAxMzYuNDg3IDkyLjM5OCA0LjgwNyAxMzAuMjIxLTQwLjAwMiAxOTMuOTgxLTQwLjAwMiA2My43NiAwIDk0LjU1OSAyMC42MDIgMTE1LjA5MiA0MC4wMDJDNTkxLjY3IDE1Ni44ODcgNjMyLjczNiAxOTUgNzEwLjAwNCAxOTVzMTE1LjA5Mi00MC41MTcgMTM0LjU0NC01Ny41MTNDODY0IDEyMC40OSA5MTUuODcyIDg1LjEyNCA5ODguMjc4IDg1LjEyNGM3Mi40MDIgMCA5NC4wMjIgMTkuODQ0IDE2Mi42NDIgMTcuMzQgNjguNjItMi41MDUgOTIuOTQtMzIuOTYzIDE2NC4yNi0zMi45NjMgNzEuMzMgMCA1OC4zNiAyMy4zNDkgMTI0LjgyIDIzLjM0OSIgc3Ryb2tlPSJ1cmwoI2EpIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAiIHkxPSIxIiB4Mj0iMTQ0MCIgeTI9IjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkY1OUY4Ii8+PHN0b3Agb2Zmc2V0PSIuMTk4IiBzdG9wLWNvbG9yPSIjQUU3MkZGIi8+PHN0b3Agb2Zmc2V0PSIuNDA2IiBzdG9wLWNvbG9yPSIjNzBDOUU4Ii8+PHN0b3Agb2Zmc2V0PSIuNjIiIHN0b3AtY29sb3I9IiMwMUFCOUQiLz48c3RvcCBvZmZzZXQ9Ii44MjUiIHN0b3AtY29sb3I9IiNGRTAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4="
+            alt="curly-line">
+
+        <div id="footer">
+            <div id="footer-links">
+                <!-- Footer data implemented by Javascript -->
+            </div>
+
+            <hr size="1" color="#e2e2e2">
+
+            <div>
+                <p>
+                    <img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt="Nifty-Logo">
+                    <span>2022 © Nifty Technologies, Inc. All rights reserved.</span>
+                </p>
+
+
+
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/nifty-project-management/mycompany/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                viewBox="0 0 93.06 93.06">
+                                <path fill="#acbad0" d="M11.185.08C5.004.08.001 5.092 0 11.259c0 6.173 5.003 11.184 11.186 11.184 6.166 0 11.176-5.011 11.176-11.184C22.362 5.091 17.351.08 11.185.08zM1.538 30.926h19.287V92.98H1.538zm68.387-1.543c-9.382 0-15.673 5.144-18.248 10.022h-.258v-8.479H32.92v62.053h19.27V62.281c0-8.093 1.541-15.932 11.575-15.932 9.89 0 10.022 9.256 10.022 16.451v30.178H93.06V58.942c0-16.707-3.605-29.559-23.135-29.559z"
+                                class="colored-path">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/nifty.pm/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 40 40">
+                                <path fill="#acbad0"
+                                    d="M16.7 39.8C7.2 38.1 0 29.9 0 20 0 9 9 0 20 0s20 9 20 20c0 9.9-7.2 18.1-16.7 19.8l-1.1-.9h-4.4l-1.1.9z"
+                                    class="colored-path">
+                                </path>
+                                <path fill="#fff"
+                                    d="m27.8 25.6.9-5.6h-5.3v-3.9c0-1.6.6-2.8 3-2.8H29V8.2c-1.4-.2-3-.4-4.4-.4-4.6 0-7.8 2.8-7.8 7.8V20h-5v5.6h5v14.1c1.1.2 2.2.3 3.3.3 1.1 0 2.2-.1 3.3-.3V25.6h4.4z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/niftypm" target="_blank">
+                            <svg width="20px" height="20px" viewBox="0 0 256 209" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M256 25.45c-9.42 4.177-19.542 7-30.166 8.27 10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52 0 4.117.465 8.125 1.36 11.97-43.65-2.191-82.35-23.1-108.255-54.876-4.52 7.757-7.11 16.78-7.11 26.404 0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661 0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475-17.975 14.086-40.622 22.483-65.228 22.483-4.24 0-8.42-.249-12.529-.734 23.243 14.902 50.85 23.597 80.51 23.597 96.607 0 149.434-80.031 149.434-149.435 0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"
+                                    fill="#acbad0" class="colored-path">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 
 </html>
-
-<script src="index.js"></script>
+<script src="scripts/navbar.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/footer.js"></script>

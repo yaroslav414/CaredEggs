@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty: Team Project Discussions</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/discussions.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <!------------------------- navbar ------------------------->
+    <nav>
+        <div>
+            <a href="index.html"><img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt="Nifty-logo"></a>
+        </div>
+        <div id="nav_middle">
+            <div id="features">
+                <p>Features</p>
+                <img class="drop_down" src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="drop-down">
+                <div id="features_hover">
+                    <div class="triangle"></div>
+                    <div>
+                        <p class="goldy">❤ Learn how Nifty inspires productivity!</p>
+                        <div>
+                            <div>
+                                <a href="#">Discussions</a>
+                                <a href="#">Tasks</a>
+                                <a href="#">Time Tracking</a>
+                                <a href="#">Project Home</a>
+                            </div>
+                            <div>
+                                <a href="#">Milestones (Gantt Chart)</a>
+                                <a href="#">Docs & Files</a>
+                                <a href="#">Reporting</a>
+                                <a href="#">Project Portfolios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="use_cases">
+                <p>Use Cases</p>
+                <img class="drop_down" src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="drop-down">
+                <div id="use_cases_hover">
+                    <div class="triangle"></div>
+                    <div>
+                        <p class="goldy">❤ Nifty is very flexible. Here are a few examples of how you can use it.</p>
+                        <div>
+                            <div>
+                                <a href="#">Agile Development</a>
+                                <a href="#">Digital Agencies</a>
+                                <a href="#">Marketing Teams</a>
+                            </div>
+                            <div>
+                                <a href="#">Client Management</a>
+                                <a href="#">Legal Case Management</a>
+                                <a href="#">Product Teams</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="resources">
+                <p>Resources</p>
+                <img class="drop_down" src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="drop-down">
+                <div id="resources_hover">
+                    <div class="triangle"></div>
+                    <div>
+                        <div>
+                            <div>
+                                <a href="#">Apps</a>
+                                <a href="#">Integrations</a>
+                                <a href="#">Security</a>
+                            </div>
+                            <div>
+                                <a href="#">Blog</a>
+                                <a href="#">Help Center</a>
+                                <a href="#">Get a Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Got Clients?</p>
+            </div>
+            <div>
+                <p>Pricing</p>
+            </div>
+            <div>
+                <p>Get a Demo</p>
+            </div>
+        </div>
+        <div>
+            <a href="login.html"><button>Login</button></a>
+            <button id="sign_up_button">Sign Up</button>
+        </div>
+    </nav>
+
+
+    <!-------------------- Sign-up function -------------------->
+    <div id="sign_up">
+        <div id="close_sign_up">
+            <p>✙</p>
+        </div>
+        <div id="sign_up_box">
+            <a href="index.html"><img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt="Nifty-logo"></a>
+            <h1>Get started in less than 1 minute!</h1>
+            <div>
+                <input id="email" type="email" placeholder="name@company.com" required>
+                <button id="submit">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------- Upper section ------------------------->
+    <div id="upper">
+        <div>
+            <i class="fa-solid fa-chevron-left"></i>
+            <span>Portfolios</span>
+        </div>
+        <div>
+            <p>Discussions</p>
+            <h1 style="font-size: 40px;">Establish knowledge hubs</h1>
+            <p>Discussions enable focused collaboration amongst project members to facilitate meaningful decision making.</p>
+            <div>
+                <div>
+                    <input id="email" type="email" placeholder="name@company.com">
+                    <button id="submit">Get Started</button>
+                </div>
+                <a href="https://api.niftypm.com/auth/google">
+                    <img src="https://sso.masaischool.com/google.svg" alt="google_logo">
+                </a>
+            </div>
+            <p>Free forever. No credit card required.</p>
+        </div>
+        <div>
+            <span>Tasks</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-------- Facilitate Ideas...Take Actions...Stay Connected -------->
+    <div id="facilitate_ideas">
+        <div>
+            <div>
+                <span>Facilitate Ideas</span>
+                <span>● ● ● ●</span>
+                <span>Take Actions</span>
+                <span>● ● ● ●</span>
+                <span>Stay Connected</span>
+                <span> <!-- Don't delete it, it's used in javascript --> </span>
+            </div>
+            <h1 id="facilitate_ideas_heading">Facilitate Ideas</h1>
+            <p id="facilitate_ideas_description">Discussions enable real-time collaboration amongst project members to share ideas, collect feedback, and take meaningful decisions. </p>
+            <img id="facilitate_ideas_image" src="https://niftypm.com/_nuxt/img/large@1x.0e4d758.webp" alt="">
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt="">
+            <p>Try Nifty now. Thank us later <i class="fa-sharp fa-solid fa-angle-right"></i></p>
+        </div>
+    </div>
+
+
+    <!-------------------------- Images part -------------------------->
+    <div>
+        <p>JOIN OVER 20,000 HIGHLY PRODUCTIVE TEAMS</p>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/logo-verizon.b7c8a9c.svg" alt="">
+            <img src="https://niftypm.com/_nuxt/img/logo-pd.e35bded.svg" alt="">
+            <img src="https://niftypm.com/_nuxt/img/logo-emovis.895c86e.svg" alt="">
+            <img src="https://niftypm.com/_nuxt/img/logo-vmware.b3363fd.svg" alt="">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI0MDAiPgogIDxjbGlwUGF0aCBpZD0iYiI+CiAgICA8cGF0aCBkPSJNMC0xdjgzaDU1LjkzN3YyMzZIMS41MjN2ODJoMTk0LjY1di04MmgtNTUuOTM4VjgyaDU0LjQxNFYtMXptNTU0LjAyIDF2ODJoNTUuOTM4djIzNmgtNTQuNDE0djgyaDEzOC43MVYxNzEuODRsODIuNjU2IDIyOC4wOCAxLjY4LjA0IDgxLjE3Mi0yMjguMTJWNDAwaDE0MC4yM3YtODJoLTU1LjkzOFY4Mmg1NC40MTVWMGgtMTU2LjMzbC02NC43MjYgMTgyLjg5TDcxMS44NjYgMHoiLz4KICAgIDxwYXRoIGlkPSJhIiBkPSJNMjIyLjIzIDB2ODJoNTUuOTM3djEzMGgyMTUuMzF2LTI0LjkyOHMxOC4wMTEtMTQuMDQyIDIzLjc1LTI3LjM2N2wxMS41MjMtMjUuODU1czUuMzUyLTE0LjQ3MiA1LjM1Mi0yNy40MDVsLTIuMzA1LTI1Ljg1NXMtMy42MTYtMjEuMDYzLTkuOTIyLTI3LjMyOGwtMjIuMjY2LTI1Ljg5NVM0NzEuMjc2IDAgNDMzLjc1IDB6bTE0MC4yMyA4Mmg4MS45OTJ2NzZIMzYyLjQ2eiIvPgogICAgPHVzZSB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDQwMCkiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPC9jbGlwUGF0aD4KICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNhY2JhZDAiIHN0cm9rZS13aWR0aD0iMjcuMzciIGQ9Ik0wIDEzLjY4M2gxMDMwdjUzLjIzMkgwbTAgNTMuMjMyaDk3NXY1My4yNDJIMHY1My4yMjJoOTc1djUzLjIyMkgwbTAgNTMuMjQyaDEwMzB2NTMuMjQySDAiIGNsaXAtcGF0aD0idXJsKCNiKSIvPgo8L3N2Zz4K"
+                alt="">
+            <img src="https://niftypm.com/_nuxt/img/logo-loreal.8cc4fed.svg" alt="">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OC4yIDMwLjEiPgogIDxwYXRoIGZpbGw9IiNhY2JhZDAiIGQ9Ik0zNy45IDYuN2gzLjVsOCAxMC41VjYuN2gzLjd2MTdoLTMuMmwtOC4zLTEwLjh2MTAuOGgtMy43di0xN3pNNjEuNSAxN0w1NC45IDYuN2g0LjRsNC4xIDYuOCA0LjEtNi44aDQuM2wtNi41IDEwLjJ2Ni44aC0zLjdWMTd6bTExLjktLjZWNi43aDMuN3Y5LjZjMCAyLjggMS40IDQuMiAzLjcgNC4yIDIuMyAwIDMuNy0xLjQgMy43LTQuMVY2LjdoMy43djkuNmMwIDUuMi0yLjkgNy43LTcuNSA3LjdzLTcuMy0yLjYtNy4zLTcuNm0tNjAtLjdjLTMuMS0xLjgtMi44LTQuNS0xLjUtNi40di0uMmMtLjEtLjUtLjYtMS42LS44LTEuOS0uMS0uMS0uMS0uMS0uMSAwIDAgLjUtLjYgMS44LTEuNSAzLjMtMSAxLjctMSA1LjIgMy45IDUuMiAwIC4xIDAgMCAwIDBtLjgtLjFjLTEuOC0zLjkgMS44LTYuNSAyLjQtNyAuMS0uMS4xLS4xLjEtLjIgMC0xLjItLjctMy4yLS45LTMuNWgtLjFjLS4zIDEuMi0yIDMtMi4zIDMuNC0yLjkgMy4zLTIuMiA1LjQuOCA3LjMgMCAuMSAwIDAgMCAwbS42LS4yYy45LTQuMiA0LjMtNC4zIDQuNi01LjEuNS0xLjItLjQtMy40LS42LTMuN2gtLjFjLS41IDEtMS4yIDItMS44IDIuNC0uNy43LTMuNyAyLjktMi4xIDYuNC0uMS4xIDAgLjEgMCAwbS42LjRjNS41LjIgNS45LTQuOCA1LjktNi43IDAtLjEtLjEtLjEtLjEgMC0uMi40LS45IDEuOC0yLjkgMi42LTEuNy44LTIuOCAyLjUtMi45IDQuMS0uMSAwIDAgMCAwIDBtMS4yLjZoLTQuM3YxLjNoNC4zdi0xLjN6bS0yLjUgMTAuMmMwIC4yLjUuMy42IDBsMS04LjNoLTIuNWwuOSA4LjN6bTE2IDMuNUguMVYuMWgzMHYzMHoiLz4KPC9zdmc+Cg=="
+                alt="">
+        </div>
+    </div>
+
+
+    <!-------------------- do more with discussions -------------------->
+    <div id="discussions">
+        <div></div>
+        <h1>Do More with Discussions</h1>
+        <p>Discussions meld conversations with action to propel projects with clarity</p>
+        <div>
+            <div>
+                <h1>Share Files</h1>
+                <p>Access and share files from your Computer, Dropbox, or Google Drive to bring everything project-related together.</p>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/large@1x.32a6702.webp" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/large@1x.67107a3.webp" alt="">
+            </div>
+            <div>
+                <h1>Create Threads</h1>
+                <p>Organize your discussions by creating threads -- ideal for answering questions or adding context to messages.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h1>Turn Discussions into Actions</h1>
+                <p>Close the gap between communication and action by creating a task directly from project Discussions.</p>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/large@1x.fa81781.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <p>Try Nifty for free, thank us later!</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAAAqCAMAAAAK0QDbAAAAllBMVEUAAAB+8NABsaIPuakFs6Qqx70BsaIBsaIBsaICsaIBsaIHtKUBsaICsaICsaIBsaICsaICsaMCsaIBsaICsaECsaICsaICsaIDs6MXvKwBsaIBsaICsaICsqIDsaIFsqMMtqYBsaIEs6MCsaIDsqIBsKIBsaIKtaYBsaEBsaECsaIDsaMDs6IEsaMBsaIDsaIIuKYBsKGfTt/oAAAAMXRSTlMAAuQQKwbz6s1u+yKtp5D3ioJ70qOgl5RIC9mydmdhNhW9PZpY78cZwrhyXE5D3VMdgs5E7wAAAsFJREFUWMPN2OmS2jAMAGA590FCLkLuhDPLjd//5WpimS1MpzNtd7r6/ln8sR1J2Ib/77T7aEugzbQ455rLgDJ25Q/pGigzKj5ZDPDK14EOPeCTXfvyzRMxb0rTPFl88uHDp1QEKgPo8B0+mR/ZTzspWFugw4y4tDcAlekUiCjVfWHjZraA9P0UWA1Ax3DgUqCrvVxNY60HOljj8clVzcqs5eZ2QEhfvdUPy2QgN4GOMuNSPeAsI6ynEQhRLVNbY6D15JjU36ZqmV7DsOwtOXaBkGfLrLHKDQ3/3Ekd6LBlPnvPiJvr+L9bm343+ktx3nat23an7bkobt0xDhfBbBIE2WKT55vNYpFlgRhtwihu2tOtWBu+fx8HXS9N9iefXOMvn7is5di+wNPQb904z2b16sNJr/acfw1vbu1sW9OuVZU6zv7jUM+CxWYpFpS43bSgQXWahqOZLos8xN50k7vmriz+fbydVqV7x+OKg4np4u8dCBknJgDpjHu3BQCLE+MNIPU7mZc6AJ6SLa0SWbM61CJvskdZLEORO3GcNM3RFY7HpkmSJBaiKAqF5TLPRfXky8lGFNXhkdKVZu/+LakNQBc5LgDMNjmtfQZfyyyH0TeMfn0pbo8e0SRxFOZiIbVYyV4s5SrWYnn8F2wT0F0GLvC9mFnqw903Yv5p+3Zhs4m09LXGFe0MaIvVcgMKzIgrVlKq4BJDLVCwrjiaRzqg+x5jJE4Z+oYjbzmCcrFx2iTujmeNo4UPCks8LHQKZ8pxxtHBgCe9VkEK18Zux6W0gE/9FT81hXT0V6rrdOwXN8iUwIMLa+YvXQeNauYhgeui4XApG1/qSB3RC/h+LW6j07909ZBLOYUXwA47DCYjYjXOnMQrC7On5h2+7Vcic/RI41WNWWIyKwPeTGk6uwMRpzS7wAu81aRnoM4n0Br/3g8m1Opnmn625AAAAABJRU5ErkJggg==" alt="">
+        <button>Start Free Trial</button>
+    </div>
+
+    <hr size="1" color="#a1a3be">
+</body>
+
+</html>
+
+<script src="scripts/navbar.js"></script>
+<script src="scripts/discussions.js"></script>
+<script src="scripts/footer.js"></script>

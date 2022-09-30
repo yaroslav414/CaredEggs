@@ -238,3 +238,85 @@ nav>div:last-child>button:last-child{
 nav>div:last-child>button:last-child:hover{
     background-color: #00a497;
 }
+
+
+
+/* ===============================Sign up===============================  */
+
+#sign_up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #a1a3be;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 2;
+}
+
+#sign_up>div:first-child {
+    position: fixed;
+    top: 60px;
+    right: -12px;
+    background-color: brown;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 16px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#sign_up>div:first-child>p {
+    rotate: 45deg;
+}
+
+#sign_up_box {
+    width: 38%;
+    height: 50%;
+    background: url("https://niftypm.com/_nuxt/img/flying-papers.1f279aa.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 17;
+}
+
+#sign_up_box>a>img {
+    width: 140px;
+}
+
+#sign_up_box>div {
+    width: 90%;
+    background-color: #edeef2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+#sign_up_box>div>input {
+    font-size: 18px;
+    color: gray;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+#sign_up_box>div>button {
+    background-color: #00baab;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+}
+

@@ -11,61 +11,6 @@ function closePopUp(abc) {
     document.querySelector("body").style.overflow = "scroll";
 }
 
-
-//---------------------Sign-up functionality---------------------
-let signUpButton = document.querySelector("#sign_up_button");
-let signUp = document.querySelector("#sign_up");
-let closeSignUp = document.querySelector("#close_sign_up")
-
-signUpButton.addEventListener("click", function () {
-    openPopUp(signUp);
-})
-
-closeSignUp.addEventListener("click", function () {
-    closePopUp(signUp);
-})
-
-
-document.querySelector("#submit").addEventListener("click", getSignUpData);
-let signUpForm = document.querySelector("#email");
-
-let users = JSON.parse(localStorage.getItem("usersLS")) || [];
-
-function getSignUpData(event) {
-    event.preventDefault();
-
-    let userExists = false;
-
-    //checking user already exists or not
-    users.forEach(function (el) {
-        if (el.email == signUpForm.value) {
-            alert("User already Exists!");
-            userExists = true;
-            return;
-        }
-    })
-
-    //if user not exists then only able to sign up
-    if (!userExists) {
-        let obj = {
-            email: signUpForm.value,
-            password: 12345
-        }
-
-        users.push(obj);
-
-        localStorage.setItem("usersLS", JSON.stringify(users));
-
-        alert("🙂 Sign Up successfully, go for Sign-in.")
-        alert("Password sent to your Gmail")
-
-        signUpForm.value = "";
-    }
-
-    signUpForm.value = "";
-}
-
-
 //--------------------------Video Player--------------------------
 let videoPlayButton = document.querySelector("#play_button");
 let videoPlayer = document.querySelector("#video_player");
@@ -193,18 +138,24 @@ let slidShow = () => {
     id = setInterval(() => {
         if (index === roadmaps.length) {
             index = 0;
+
+            roadmapsSpans.forEach(function(el){
+                el.style.color = "gray";
+                el.style.borderBottom = "none";
+            })
+
+            engineeringSpans.forEach(function(el){
+                el.style.color = "gray";
+                el.style.borderBottom = "none";
+            })
         }
 
 
         for (let i = 0; i < roadmapsSpans.length; i++) {
-            // if (i >= 2) {
-            //     roadmapsSpans[i - 2].style.color = "gray";
-            //     roadmapsSpans[i - 2].style.borderBottom = "none";
-            // }
 
             if (roadmapsSpans[i].innerText == roadmaps[index].name) {
                 roadmapsSpans[i].style.color = "#00baab";
-                // roadmapsSpans[i+1].style.color = "#00baab";
+                roadmapsSpans[i+1].style.color = "#00baab";
                 roadmapsSpans[i].style.borderBottom = "2px solid #00baab";
             }
         }
@@ -213,23 +164,15 @@ let slidShow = () => {
         roadmapsImage.src = roadmaps[index].image;
 
 
+
         for (let i = 0; i < engineeringSpans.length; i++) {
-            // if (i >= 2) {
-            //     roadmapsSpans[i - 2].style.color = "gray";
-            //     roadmapsSpans[i - 2].style.borderBottom = "none";
-            // }
-            // engineeringSpans.forEach(function(el){
-            //     el.style.color = "gray";
-            //     el.style.borderBottom = "none";
-            // })
 
             if (engineeringSpans[i].innerText == engineering[index].name) {
                 engineeringSpans[i].style.color = "#00baab";
-                // engineeringSpans[i+1].style.color = "#00baab";
+                engineeringSpans[i+1].style.color = "#00baab";
                 engineeringSpans[i].style.borderBottom = "2px solid #00baab";
             }
         }
-
         engineeringHeading.innerText = engineering[index].name;
         engineeringDescription.innerText = engineering[index].description;
         oneOption.innerText = engineering[index].points[0];

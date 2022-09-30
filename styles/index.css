@@ -4,6 +4,7 @@
     background-image: linear-gradient(to bottom, #fcf9f9, #f3f6fa);
     display: flex;
     padding-top: 55px;
+    position: relative;
 }
 
 #upper_part>img:first-child {
@@ -38,24 +39,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.638)); */
+    position: relative;
 }
 
-#vid>div>div {
+#vid>div::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(transparent, hsla(0, 0%, 100%, .8));
+}
+
+#play_button {
     height: 100px;
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     background-color: white;
     border: 0px solid #00baab;
     cursor: pointer;
     transition: background-color 0.5s ease-in, border 0.5s ease-in;
+    z-index: 1;
 }
 
-#vid>div>div:hover {
+#play_button:hover {
     background-color: #edf9f7;
     border: 1px solid #00baab;
 }
@@ -65,9 +76,11 @@
     font-size: 40px;
 }
 
-#vid>div>div+p {
+#play_button+p {
     color: #00baab;
     margin-bottom: 15px;
+    letter-spacing: 4px;
+    z-index: 4;
 }
 
 #vid+div {
@@ -118,6 +131,12 @@
     padding: 10px 15px;
     color: white;
     border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+#vid+div>div:nth-child(3)>button:hover{
+    cursor: pointer;
+    background-color: #009e91;
 }
 
 #vid+div>hr {
@@ -209,7 +228,7 @@
 
 #upper_part_2>div {
     margin: 70px auto;
-    width: 85%;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -262,10 +281,13 @@
     padding-bottom: 10px;
 }
 
-/* #roadmaps>div:first-child>div:first-child>span:first-child,
-#roadmaps>div:first-child>div:first-child>span:nth-child(2) {
-    color: #00baab;
-} */
+#roadmaps>div:first-child>div:first-child>span:nth-of-type(odd) {
+    cursor: pointer;
+}
+
+#roadmaps>div:first-child>div:first-child>span:nth-of-type(even) {
+    font-size: 10px;
+}
 
 #roadmaps>div:first-child>div:first-child>span {
     color: gray;
@@ -273,7 +295,7 @@
 
 #roadmaps>div:first-child>h1+p {
     margin: 20px 0px 0px;
-    width: 42%;
+    width: 45%;
     text-align: center;
     line-height: 22px;
     font-size: 17px;
@@ -355,10 +377,13 @@
     padding-bottom: 10px;
 }
 
-/* #engineering>div:first-child>div:first-child>span:first-child,
-#engineering>div:first-child>div:first-child>span:nth-child(2) {
-    color: #00baab;
-} */
+#engineering>div:first-child>div:first-child>span:nth-of-type(odd) {
+    cursor: pointer;
+}
+
+#engineering>div:first-child>div:first-child>span:nth-of-type(even) {
+    font-size: 10px;
+}
 
 #engineering>div:first-child>div:first-child>span {
     color: gray;
@@ -432,85 +457,6 @@
 }
 
 
-/* ===============================Sign up===============================  */
-
-#sign_up {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #a1a3be;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-}
-
-#sign_up>div:first-child {
-    position: fixed;
-    top: 60px;
-    right: -12px;
-    background-color: brown;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 16px;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-#sign_up>div:first-child>p {
-    rotate: 45deg;
-}
-
-#sign_up_box {
-    width: 38%;
-    height: 50%;
-    background: url("https://niftypm.com/_nuxt/img/flying-papers.1f279aa.png");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-#sign_up_box>a>img {
-    width: 140px;
-}
-
-#sign_up_box>div {
-    width: 90%;
-    background-color: #edeef2;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-}
-
-#sign_up_box>div>input {
-    font-size: 18px;
-    color: gray;
-    background: transparent;
-    outline: none;
-    border: none;
-}
-
-#sign_up_box>div>button {
-    background-color: #00baab;
-    font-size: 18px;
-    border: none;
-    padding: 10px 15px;
-    color: white;
-    border-radius: 5px;
-}
-
-
-
 /* =============================Video Player============================= */
 
 #video_player {
@@ -579,6 +525,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 10;
 }
 
 #chat>svg path {
@@ -1010,8 +957,3 @@
     align-items: flex-end;
     padding-right: 20px;
 }
-
-
-
-
-/* =========================== Common Footer =========================== */
