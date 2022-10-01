@@ -471,6 +471,7 @@
     justify-content: center;
     align-items: center;
     visibility: hidden;
+    z-index: 111;
 }
 
 
@@ -501,6 +502,7 @@
     text-align: center;
     padding: 15px;
     border-radius: 10px;
+    z-index: 111;
 }
 
 #video_box>iframe {
