@@ -509,32 +509,6 @@
 }
 
 
-
-/* ==========================Chat Option========================== */
-#chat {
-    height: 60px;
-    width: 60px;
-    font-size: 30px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #00baab;
-    color: #00baab;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 10;
-}
-
-#chat>svg path {
-    fill: rgb(255, 255, 255);
-}
-
-
-
-
 /* ================Readmore Nifty reviews on G2================ */
 #G2 {
     width: 100%;
@@ -919,41 +893,4 @@
 .rotating-icons:nth-child(12) {
     bottom: 61%;
     left: -3%;
-}
-
-
-
-
-/* =================Automatic Carousal starting from here================= */
-
-#unification+div {
-    width: 85%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-#unification+div>div:first-child {
-    width: 50%;
-    padding-right: 20px;
-}
-
-#unification+div>div:first-child>p {
-    letter-spacing: 1px;
-    color: #00baab;
-    text-transform: capitalize;
-}
-
-#unification+div>div:first-child>h1 {
-    letter-spacing: 1px;
-    font-size: 40px;
-    font-weight: 600;
-    margin: 20px 0px;
-}
-
-#unification+div>div:last-child {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 20px;
 }

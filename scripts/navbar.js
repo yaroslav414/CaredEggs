@@ -65,3 +65,26 @@ function getSignUpData(event) {
     signUpForm.value = "";
 }
 
+
+
+
+//==================== Chat functionality ====================
+// let dropDown = document.querySelector("")
+let chat = document.querySelector("#chat");
+let chatBox = document.querySelector("#chat-box");
+
+let chatOpened = 0;
+
+chat.addEventListener("click", function(){
+    if(chatOpened == 0){
+        chatOpened = 1;
+        chatBox.style.visibility = "visible";
+        document.querySelector("#box").style.opacity = "0";
+        document.querySelector("#dropdown").style.rotate = "0deg";
+    }else{
+        chatOpened = 0;
+        chatBox.style.visibility = "hidden";
+        document.querySelector("#box").style.opacity = "1";
+        document.querySelector("#dropdown").style.rotate = "-180deg";
+    }
+})

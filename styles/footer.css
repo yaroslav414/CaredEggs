@@ -1,3 +1,38 @@
+
+/* =================Automatic Carousal starting from here================= */
+
+#carousal_start {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#carousal_start>div:first-child {
+    width: 50%;
+    padding-right: 20px;
+}
+
+#carousal_start>div:first-child>p {
+    letter-spacing: 1px;
+    color: #00baab;
+    text-transform: capitalize;
+}
+
+#carousal_start>div:first-child>h1 {
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+#carousal_start>div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
 #left-carousal,
 #right-carousal {
     width: 100%;
