@@ -1,4 +1,4 @@
-# Nifty cloned by Atanu🙂
+# Nifty cloned
 ---
 ### Nifty, it's a remote collaboration hub to manage Projects, tasks, communication all in one place. Here you can collaborate with your team within an easy way.
 ### Nifty is created with the help of HTML5, CSS3 and JavaScript
