@@ -4,7 +4,7 @@
 ### Nifty is created with the help of HTML5, CSS3 and JavaScript
 ### It's a solo Project and I cloned it in my unit-2 in Masai and completed it within 5 days
 ---
-
+     
 ## :small_blue_diamond: Home Page
 <img src="https://user-images.githubusercontent.com/94675329/220152858-e5a9412b-7cc6-4f56-bca8-6784ee4b71f4.PNG"/>
 
